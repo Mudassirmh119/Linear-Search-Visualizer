@@ -1,0 +1,45 @@
+.container {
+  margin-top: 3rem;
+}
+
+.node {
+  height: 3rem;
+  width: 3rem;
+  background: rgb(5, 247, 255);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  margin: 0.5rem 0.5rem;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.node-visited {
+  height: 3rem;
+  width: 3rem;
+  background: rgb(5, 255, 101);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  margin: 0.5rem 0.5rem;
+}
+
+.node-found {
+  height: 4rem;
+  width: 4rem;
+  background: rgb(255, 188, 5);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  margin: 0.5rem 0.5rem;
+}
+
+div {
+  transition: width 1s, height 1s;
+}

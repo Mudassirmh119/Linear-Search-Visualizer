@@ -1,5 +1,9 @@
 .container {
   margin-top: 3rem;
+  position: static;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .node {
@@ -42,4 +46,197 @@
 
 div {
   transition: width 1s, height 1s;
+}
+
+.n1{
+  height: 2rem;
+  width: 2rem;
+  background: rgb(5, 247, 255);
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2rem;
+  margin: 0.5rem 0.5rem;
+
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-135px, -23px);
+}
+
+
+ 
+.n2{
+  height: 2rem;
+  width: 2rem;
+  background: rgb(5, 247, 255);
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2rem;
+  margin: 0.5rem auto;
+
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(535px, 269px);
+}
+
+
+
+.n3{
+  height: 2rem;
+  width: 2rem;
+  background: rgb(5, 247, 255);
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2rem;
+  margin: 0.5rem auto;
+
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-127px, 269px);
+}
+
+
+
+.n4{
+  height: 2rem;
+  width: 2rem;
+  background: rgb(5, 247, 255);
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2rem;
+  margin: 0.5rem auto;
+
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(535px, 561px);
+}
+
+
+
+.n5{
+  height: 2rem;
+  width: 2rem;
+  background: rgb(5, 247, 255);
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2rem;
+  margin: 0.5rem auto;
+
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(535px, -23px);
+} 
+
+.n6{
+  height: 2rem;
+  width: 2rem;
+  background: rgb(5, 247, 255);
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2rem;
+  margin: 0.5rem auto;
+
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(1205px, 561px);
+} 
+
+.n7{
+  height: 2rem;
+  width: 2rem;
+  background: rgb(5, 247, 255);
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2rem;
+  margin: 0.5rem auto;
+
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-127px, 561px);
+} 
+
+.n8{     
+  height: 2rem;
+  width: 2rem;
+  background: rgb(5, 247, 255);
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2rem;
+  margin: 0.5rem auto;
+
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(1205px, -23px);
+} 
+
+.n9{     
+  height: 2rem;
+  width: 2rem;
+  background: rgb(5, 247, 255);
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2rem;
+  margin: 0.5rem auto;
+
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(1205px, 269px);
+} 
+
+.line {
+  stroke:rgb(0, 0, 0);
+  stroke-width:3;
 }

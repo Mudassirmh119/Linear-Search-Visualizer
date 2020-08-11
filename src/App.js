@@ -6,8 +6,8 @@ import BinaryTree from './Components/BinaryTree';
 function App() {
   
   return (
-    // <LinearSearch/>
-    <BinaryTree/>
+    <LinearSearch/>
+    // <BinaryTree/>
   );
 }
 

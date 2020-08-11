@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const getNumbers = (count) => {
+const getNumbers = (count = 20) => {
     let numbers = []
     for(let i = 0; i < count; i++){
       let num = Math.floor(Math.random() * 100)
@@ -16,9 +16,12 @@ const getNumbers = (count) => {
   }
 
 export default function LinearSearch() {
-    const[number,setNumbers] = useState(getNumbers(20))
+    const[number,setNumbers] = useState(getNumbers())
     const[input, setInput] = useState('');
 
+
+    // useEffect(() => {
+    // }, [input, number])
 
     const handleSearch = (e) => {
         e.preventDefault();
@@ -58,6 +61,19 @@ export default function LinearSearch() {
         
         }
     }
+
+    const handleReset = () => {
+        setInput('')
+        number.forEach(item => {
+            item.isFound = false;
+            item.isVisited = false;
+        })
+    }
+
+    const getNewData = () => {
+        setInput('')
+        setNumbers(getNumbers())
+    }
     
     return (
         <div className="container">
@@ -71,7 +87,9 @@ export default function LinearSearch() {
             <div className="form-group mt-5">
                 <input type="text" value={input} onChange={(e)=> setInput(e.target.value)} className="form-control" id="search" placeholder="Search..."/>
                 <div className='d-flex justify-content-center'>
-                <input type="submit" value="Search" className='btn btn-primary mt-2' />
+                <input type="submit" value="Search" className='btn btn-primary mt-2' /> 
+                <input type="button" value='Reset' className='btn btn-secondary mt-2 ml-2' onClick={handleReset}/>
+                <input type='button' value='New Data' className = 'btn btn-info mt-2 ml-2' onClick={getNewData}/>
                 </div>
             </div>
             </form>
